@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Register – EventEase</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <nav>
+    <h1> EventEase</h1>
+    <a href="index.html">Home</a>
+  </nav>
+
+  <section class="form-section">
+    <h2>Register for Event</h2>
+    <form onsubmit="return handleSubmit(event)">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <select required>
+        <option value="">-- Select Event --</option>
+        <option value="Hackathon 2025">Accenture Hackathon 2025</option>
+        <option value="AI Workshop">AI Workshop</option>
+      </select>
+      <button type="submit">Submit</button>
+    </form>
+    <p id="msg"></p>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
